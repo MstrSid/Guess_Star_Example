@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_color"
+    android:padding="8dp"
+    tools:context=".MainActivity">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cvStar"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:backgroundTint="@color/background_light_color"
+        android:elevation="4dp"
+        app:cardCornerRadius="15dp"
+        app:contentPadding="4dp"
+        app:layout_constraintBottom_toTopOf="@+id/guideline2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/ivStar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:contentDescription="@string/txt_star_image"
+            tools:ignore="ImageContrastCheck"
+            app:srcCompat="@drawable/disconnected" />
+    </androidx.cardview.widget.CardView>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.5" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cvButtons"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="24dp"
+        android:backgroundTint="@color/background_light_color"
+        android:elevation="4dp"
+        app:cardCornerRadius="15dp"
+        app:contentPadding="4dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline2">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center_vertical">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnAnswer1"
+                style="@style/Buttons"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:tag="0"
+                app:cornerRadius="10dp"
+                app:strokeColor="@color/primaryDarkColor"
+                tools:text="Answer 1" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnAnswer2"
+                style="@style/Buttons"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:tag="1"
+                app:cornerRadius="10dp"
+                app:strokeColor="@color/primaryDarkColor"
+                tools:text="Answer 2" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnAnswer3"
+                style="@style/Buttons"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:tag="2"
+                app:cornerRadius="10dp"
+                app:strokeColor="@color/primaryDarkColor"
+                tools:text="Answer 3" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnAnswer4"
+                style="@style/Buttons"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:tag="3"
+                app:cornerRadius="10dp"
+                app:strokeColor="@color/primaryDarkColor"
+                tools:text="Answer 4" />
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>

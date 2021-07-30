@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Buttons" parent="Widget.MaterialComponents.Button">
+        <item name="android:textSize">24sp</item>
+        <item name="android:fontFamily">monospace</item>
+        <item name="android:textStyle">bold</item>
+        <item name="strokeColor">@color/secondaryLightColor</item>
+    </style>
+</resources>
